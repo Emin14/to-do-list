@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <aside class="aside">
+                    <!-- Добавить в будущем поиск по задачам -->
+                    <!-- <input type="text"> -->
+                    <div class="filter">
+                        <ul>
+                            <li class="filter__item">На сегодня</li>
+                            <li class="filter__item">Все текущие</li>
+                            <!-- В будущем реализовать -->
+                            <!-- <li class="filter__item">Избранные</li> -->
+                            <li class="filter__item">Выполненные задачи</li>
+                        </ul>
+
+                    </div>
+            </aside>
+            <main class="main">
+                <div class="main__top">
+                    <span class="todaysDate"></span>
+                    <img src="https://img.icons8.com/ios/70/add--v1.png " alt="" class="add-task">
+                </div>
+                <p class="author">To do list by Emin</p>
+            </main> 
+            <div class="darken"></div>
+            <div class="modal">
+              <form action="" class="form">
+                <h3 class="form__title">Добавить задачу</h3>
+                <label for="title">Название задачи</label>
+                <input type="text" id="title">
+                <label for="description">Описание задачи</label>
+                <input type="text" id="description">
+                <label for="date">К какой дате выполнить</label>
+                <input type="date" id="date">
+                <p class="form-category__title">Категория:</p>
+                <!-- <p class="add-category">
+                    <span class="add-category_item">Без категории</span>
+                </p> -->
+
+                <button type="submit" class="form__btn">Добавить задачу</button>
+              </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
