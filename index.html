@@ -26,7 +26,7 @@
             <main class="main">
                 <div class="main__top">
                     <span class="todaysDate"></span>
-                    <img src="https://img.icons8.com/ios/70/add--v1.png " alt="" class="add-task">
+                    <img src="https://img.icons8.com/external-flat-icons-inmotus-design/90/external-Plus-mathematics-geometry-flat-icons-inmotus-design-2.png" alt="external-Plus-mathematics-geometry-flat-icons-inmotus-design-2" alt="" class="add-task">
                 </div>
                 <p class="author">To do list by Emin</p>
             </main> 
@@ -34,12 +34,12 @@
             <div class="modal">
               <form action="" class="form">
                 <h3 class="form__title">Добавить задачу</h3>
-                <label for="title">Название задачи</label>
-                <input type="text" id="title">
-                <label for="description">Описание задачи</label>
-                <input type="text" id="description">
-                <label for="date">К какой дате выполнить</label>
-                <input type="date" id="date">
+                <label class="form__label" for="title"></label>
+                <input class="form__input" type="text" id="title" placeholder="Введите название задачи" required>
+                <label class="form__label" for="description">Описание задачи</label>
+                <textarea class="form__textarea" name="" id="description" cols="3" rows="3" placeholder="Введите описание задачи"></textarea>
+                <label class="form__label" for="date">К какой дате выполнить</label>
+                <input class="form__input" type="date" id="date">
                 <p class="form-category__title">Категория:</p>
                 <!-- <p class="add-category">
                     <span class="add-category_item">Без категории</span>
@@ -50,7 +50,8 @@
             </div>
         </div>
     </div>
-
+    <script src="./data.js"></script>
+    <script src="./render.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>
